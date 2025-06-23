@@ -1,0 +1,81 @@
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f4f6fb;
+    color: #222;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    background: #2e86de;
+    color: #fff;
+    padding: 24px 0 16px 0;
+    margin: 0 0 24px 0;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+section {
+    background: #fff;
+    margin: 24px auto;
+    padding: 24px 32px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(44, 62, 80, 0.08);
+    max-width: 600px;
+}
+
+section.personal {
+    background: #fff;
+    margin: 24px auto;
+    padding: 24px 32px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(44, 62, 80, 0.08);
+    max-width: 600px;
+    margin-bottom: 0;
+}
+
+section.personal h2 {
+    color: #2e86de;
+    border-bottom: 1px solid #e1e5ee;
+    padding-bottom: 8px;
+    margin-top: 0;
+}
+
+h2 {
+    color: #2e86de;
+    border-bottom: 1px solid #e1e5ee;
+    padding-bottom: 8px;
+    margin-top: 0;
+}
+
+strong {
+    color: #1b4f72;
+}
+
+p {
+    margin: 6px 0 12px 0;
+    line-height: 1.6;
+}
+
+div {
+    max-width: 600px;
+    margin: 24px auto;
+    background: #eaf2fb;
+    border-radius: 8px;
+    padding: 16px 24px;
+    text-align: center;
+    font-weight: bold;
+    color: #2e86de;
+    box-shadow: 0 1px 4px rgba(44, 62, 80, 0.06);
+}
+
+@media (max-width: 700px) {
+    section, div {
+        max-width: 95vw;
+        padding: 16px 8vw;
+    }
+    h1 {
+        font-size: 1.5em;
+        padding: 16px 0 10px 0;
+    }
+}
