@@ -1,93 +1,144 @@
 body {
     font-family: 'Segoe UI', Arial, sans-serif;
-    background: #f4f6fb;
-    color: #222;
+    background: linear-gradient(120deg, #e9ecef 0%, #f8fafc 100%);
+    color: #23272f;
     margin: 0;
     padding: 0;
 }
 
 h1 {
-    background: #2e86de;
+    background: #1a237e;
     color: #fff;
-    padding: 24px 0 16px 0;
-    margin: 0 0 24px 0;
+    padding: 32px 0 20px 0;
+    margin: 0 0 32px 0;
     text-align: center;
-    letter-spacing: 2px;
+    letter-spacing: 2.5px;
+    font-size: 2.2em;
+    border-bottom: 4px solid #3949ab;
+    box-shadow: 0 2px 12px rgba(26,35,126,0.08);
 }
 
-section {
+section, div {
     background: #fff;
-    margin: 24px auto;
-    padding: 24px 32px;
-    border-radius: 12px;
-    box-shadow: 0 2px 8px rgba(44, 62, 80, 0.08);
-    max-width: 600px;
-}
-
-section.personal {
-    background: #fff;
-    margin: 24px auto;
-    padding: 24px 32px;
-    border-radius: 12px;
-    box-shadow: 0 2px 8px rgba(44, 62, 80, 0.08);
-    max-width: 600px;
-    margin-bottom: 0;
-}
-
-section.personal h2 {
-    color: #2e86de;
-    border-bottom: 1px solid #e1e5ee;
-    padding-bottom: 8px;
-    margin-top: 0;
+    margin: 28px auto;
+    padding: 28px 38px;
+    border-radius: 14px;
+    box-shadow: 0 4px 18px rgba(44, 62, 80, 0.10);
+    max-width: 650px;
 }
 
 h2 {
-    color: #2e86de;
-    border-bottom: 1px solid #e1e5ee;
-    padding-bottom: 8px;
+    color: #3949ab;
+    border-bottom: 2px solid #e3e6f3;
+    padding-bottom: 10px;
     margin-top: 0;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-size: 1.25em;
+    font-weight: 700;
 }
 
 strong {
-    color: #1b4f72;
+    color: #283593;
 }
 
 p {
-    margin: 6px 0 12px 0;
-    line-height: 1.6;
-}
-
-div {
-    max-width: 600px;
-    margin: 24px auto;
-    background: #eaf2fb;
-    border-radius: 8px;
-    padding: 16px 24px;
-    text-align: center;
-    font-weight: bold;
-    color: #2e86de;
-    box-shadow: 0 1px 4px rgba(44, 62, 80, 0.06);
+    margin: 8px 0 14px 0;
+    line-height: 1.7;
+    font-size: 1.08em;
 }
 
 section.personal p strong {
-    color: #2e86de;
+    color: #1a237e;
     font-weight: 600;
     margin-right: 6px;
 }
 
 section.personal p {
-    margin: 8px 0 8px 0;
-    font-size: 1.08em;
+    margin: 10px 0 10px 0;
+    font-size: 1.12em;
     letter-spacing: 0.2px;
+}
+
+ul.habilidades {
+    max-width: 600px;
+    margin: 0 auto 18px auto;
+    padding-left: 24px;
+    background: #f3f6fd;
+    border-radius: 8px;
+    box-shadow: 0 1px 4px rgba(44, 62, 80, 0.06);
+    font-size: 1.08em;
+    line-height: 1.7;
+}
+ul.habilidades li {
+    margin-bottom: 7px;
+    color: #1a237e;
+    list-style: disc inside;
+}
+
+.icono-social {
+    width: 22px;
+    height: 22px;
+    vertical-align: middle;
+    margin-right: 7px;
+    margin-left: 2px;
+    filter: drop-shadow(0 1px 2px #b0b0b0);
+    transition: transform 0.2s;
+}
+.icono-social:hover {
+    transform: scale(1.13);
+}
+
+section:last-of-type, div {
+    background: #e3e6f3;
+    color: #1a237e;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0 1px 8px rgba(44, 62, 80, 0.08);
+}
+
+/* Enlaces destacados */
+a {
+    color: #1a237e;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+a:hover {
+    color: #3949ab;
+    text-decoration: underline;
+}
+
+section .exp-titulo, section .edu-titulo {
+    display: inline-block;
+    font-size: 1.18em;
+    color: #fff;
+    background: linear-gradient(90deg, #3949ab 60%, #1a237e 100%);
+    padding: 4px 10px;
+    border-radius: 6px;
+    margin: 12px 0 4px 0;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    box-shadow: 0 1px 4px rgba(44, 62, 80, 0.08);
+}
+section .exp-puesto, section .edu-detalle {
+    font-size: 1.08em;
+    color: #283593;
+    margin-bottom: 2px;
+    font-weight: 500;
 }
 
 @media (max-width: 700px) {
     section, div {
-        max-width: 95vw;
-        padding: 16px 8vw;
+        max-width: 98vw;
+        padding: 16px 4vw;
     }
     h1 {
-        font-size: 1.5em;
+        font-size: 1.2em;
         padding: 16px 0 10px 0;
+    }
+    h2 {
+        font-size: 1em;
     }
 }
