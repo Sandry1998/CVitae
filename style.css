@@ -117,16 +117,50 @@ section .exp-titulo, section .edu-titulo {
     background: linear-gradient(90deg, #3949ab 60%, #1a237e 100%);
     padding: 4px 10px;
     border-radius: 6px;
-    margin: 12px 0 4px 0;
+    margin: 12px auto 4px auto;
     font-weight: 700;
     letter-spacing: 0.5px;
     box-shadow: 0 1px 4px rgba(44, 62, 80, 0.08);
+    text-align: center;
+    display: block;
+    width: fit-content;
 }
 section .exp-puesto, section .edu-detalle {
     font-size: 1.08em;
     color: #283593;
     margin-bottom: 2px;
     font-weight: 500;
+}
+
+.proyecto {
+    background: #f3f6fd;
+    border-radius: 8px;
+    box-shadow: 0 1px 4px rgba(44, 62, 80, 0.08);
+    padding: 16px 20px;
+    margin: 18px 0;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.proyecto strong {
+    color: #3949ab;
+    font-size: 1.15em;
+    letter-spacing: 0.5px;
+}
+.proyecto p {
+    margin: 8px 0 10px 0;
+    color: #23272f;
+    font-size: 1.05em;
+}
+.proyecto a {
+    color: #1a237e;
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.proyecto a:hover {
+    color: #283593;
+    text-decoration: underline;
 }
 
 @media (max-width: 700px) {
